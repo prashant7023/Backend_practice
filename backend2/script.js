@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.get("/",(req,res)=>{
     // res.send("Hello World");
     res.render("index");
-});
+}); 
 
 // dynamic routing
 app.get("/profile/:name",(req,res)=>{
