@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="main text-zinc-100 text-xl w-full min-h-screen bg-zinc-900 flex items-center align-baseline flex-col">
+        <a href="/" class="text-blue-500 inline-block m-10">Go Back to Home</a>
+        <form action="/edit" method="post" class=" p-2 flex flex-col gap-4 w-1/2 p-4 rounded-lg">
+            <input type="text" placeholder="Previous Name" class="  outline-none input  rounded p-2 bg-zinc-800 text-zinc-600 " name="previous" value="<%= filename %>"/>
+            <input type="text" placeholder="New Name" class=" block outline-none input rounded p-2 bg-zinc-800 " name="new" />
+
+            <input type="submit" value="Change Name" class="btn rounded p-2 bg-yellow-400 text-zinc-900 hover:bg-yellow-600 trans transition duration-200 cursor-pointer" />
+        </form>
+    </div>
+
+    <script src="/javascripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="main text-zinc-100 text-xl w-full min-h-screen bg-zinc-900 flex items-center align-baseline flex-col">
+        <a href="/" class="text-blue-500 inline-block m-10">Go Back to Home</a>
+        <h1 class="text-3xl tracking-tighter"> <%= filename%> </h1>
+        <p class="text-xl m-2 font-light"><%=filedata%></p>
+    </div>
+
+    <script src="/javascripts/script.js"></script>
+</body>
+</html>
