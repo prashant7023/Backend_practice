@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class=" w-full p-5 text-xl text-zinc-100 main  min-h-screen bg-zinc-900 flex flex-col items-center align-baseline">
+        <a href="/read" class="text-2xl text-blue-500 mb-4">Read Users</a>
+        <h1>Creat User</h1> 
+        
+        <form action="/update/<%=user._id%>" method="post" class="w-1/2 action flex flex-col align-baseline gap-4 p-2 ">
+            <input type="text" class=" input outline-none bg-zinc-800 rounded p-2 text-white" placeholder="name" name="name" value="<%=user.name%>" id="">
+            <input type="text" class="input outline-none bg-zinc-800 rounded p-2 text-white" placeholder="email" name="email" value="<%=user.email%>" id="">
+            <input type="text" class="input outline-none bg-zinc-800 rounded p-2 text-white" placeholder="Image URL" name="image" value="<%=user.image%>" id="">
+            <input type="submit" value="Update User" class="flex items-center btn rounded p-2 bg-blue-500 text-zinc-200 hover:bg-yellow-700 transition duration-200 cursor-pointer" >
+        </form>
+    </div>
+</body>
+</html>
