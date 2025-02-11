@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full min-h-screen text-white bg-zinc-900 p-5 flex flex-col items-center">
+        <a class="text-2xl text-blue-500 "  href="/">Create User</a>
+        <h2 class="text-2xl py-4">Login User</h2>
+        <form action="/login" method="post" class="main w-1/2 flex flex-col gap-3">
+            <input class="bg-zinc-800 px-3 py-2 outline-none rounded" type="email" placeholder="email" name="email" id="">
+            <input class="bg-zinc-800 px-3 py-2 outline-none rounded" type="password" placeholder="password" name="password" id="">
+            <input class="bg-yellow-500 px-3 py-2 outline-none rounded hover:bg-yellow-700 transition duration-200 cursor-pointer" value="Login User" type="submit" >
+        </form>
+    </div>
+</body>
+</html>
